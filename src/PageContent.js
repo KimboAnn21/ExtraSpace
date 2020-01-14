@@ -4,7 +4,7 @@ class PageContent extends Component {
   render() {
     return (
       <div>
-        <p>Can you spot the item that doesn&apos;t belong?</p>
+        <p>Can you spot the item that doesn&apos;t belong?
         <ul>
             <li>Lorem</li>
             <li>Ipsum</li>
@@ -14,6 +14,7 @@ class PageContent extends Component {
             <li>Aenean</li>
             <li>Consectetur</li>
         </ul>
+        </p>
       </div>
     );
   }

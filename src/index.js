@@ -5,5 +5,5 @@ import MenuContainer from "./MenuContainer";
 
 ReactDOM.render(
   <MenuContainer/>, 
-  document.getElementById("container")
+  document.querySelector("#container")
 );

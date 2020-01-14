@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 
+
 class MenuContainer extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
 
     this.state = {
       visible: false
-    }
+    };
 
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -22,11 +23,9 @@ class MenuContainer extends Component {
   }
 
   toggleMenu() {
-    this.setState(
-      {
+    this.setState({
         visible: !this.state.visible
-      }
-    );
+      });
   }
 
   render() {
@@ -36,7 +35,7 @@ class MenuContainer extends Component {
         <Menu handleMouseDown={this.handleMouseDown}
               menuVisibility={this.state.visible}/>
         <div>
-          <p>Can you spot the item that doesn&apos;t belong?</p>
+          <p>Can you spot the item that does not belong?</p>
           <ul>
               <li>Lorem</li>
               <li>Ipsum</li>
